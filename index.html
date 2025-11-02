@@ -1,157 +1,171 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Missing Cat - $300 Reward</title>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="css/halfmoon.min.css" />
-    <link rel="stylesheet" href="css/halfmoon.elegant.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <meta name="description" content="" />
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Missing Cat - Rowdy ($300 Reward)</title>
 
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:image:alt" content="" />
+  <meta name="description" content="Missing cat named Rowdy. $300 reward if found. Please call or text if seen." />
+  <meta property="og:title" content="Missing Cat - Rowdy ($300 Reward)" />
+  <meta property="og:description" content="Missing in [your area]. Please call or text if seen." />
+  <meta property="og:image" content="./img/flyer.jpg" />
+  <meta property="og:image:alt" content="Photo of missing cat Rowdy" />
+  <meta property="og:type" content="website" />
 
-    <link rel="icon" href="/favicon.ico" sizes="any" />
-    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="icon.png" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#111" />
 
-    <link rel="manifest" href="site.webmanifest" />
-    <meta name="theme-color" content="#fafafa" />
-  </head>
+  <link rel="stylesheet" href="css/halfmoon.min.css" />
+  <link rel="stylesheet" href="css/halfmoon.elegant.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <body data-bs-theme="dark" data-bs-core="elegant">
-    <div class="container border border-danger rounded-5 p-3 my-3">
-      <!-- Status section -->
+  <style>
+    body {
+      background: #111;
+      color: #f8f8f8;
+    }
+    .container {
+      border: 1px solid #dc3545;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
 
-      <div class="row mt-3">
-        <!-- Main photo -->
-        <div class="col-lg-4">
-                <div class="status bg-danger mb-3">
-        <strong class="">Status:</strong> Still missing as of
-        <span id="status-date">Nov 2, 2025</span>.
-      </div>
-          <img
-            src="./img/flyer.jpg"
-            alt="Missing cat photo"
-            class="main-photo"
-          />
+    .main-photo {
+      width: 100%;
+      border-radius: 1rem;
+      margin-top: 1rem;
+    }
+
+    /* Carousel layout */
+    .carousel {
+      border-radius: 1rem;
+      overflow: hidden;
+      background: #000;
+    }
+
+
+    .carousel-item figure {
+      flex: 1;
+      object-fit: contain;
+      height: 100%;
+      width: 50%;
+      background: #000;
+
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      filter: invert(1);
+    }
+
+    @media (max-width: 768px) {
+      .carousel-item {
+        flex-direction: column;
+        height: 600px;
+      }
+      .carousel-item figure img {
+        width: 100%;
+        height: 50%;
+
+      }
+    }
+  </style>
+</head>
+
+<body data-bs-theme="dark" data-bs-core="elegant">
+  <main class="container">
+    <div class="row g-4">
+      <!-- Flyer & status -->
+      <aside class="col-lg-4">
+        <div class="status bg-danger">
+          <strong>Status:</strong> Still missing as of
+          <span id="status-date">Nov 2, 2025</span>.
         </div>
+        <img
+          src="./img/flyer.jpg"
+          alt="Flyer showing missing cat named Rowdy"
+          class="main-photo img-fluid"
+        />
+      </aside>
 
-        <!-- Carousel -->
-
-        <div id="carousel" class="carousel slide col-lg-8">
+      <!-- Carousel with two images per slide -->
+      <section class="col-lg-8">
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img
-                src="./img/rowdy01.jpg"
-                class="d-block w-100"
-                alt="First slide"
-              />
-
-              <img
-                src="./img/rowdy02.jpg"
-                class="d-block w-100"
-                alt="Second slide"
-              />
+              <figure class="figure">
+              <img src="./img/rowdy01.jpg" class="figure-img" alt="Rowdy photo 1" />
+              </figure>
+              <figure class="figure">
+                <img src="./img/rowdy02.jpg" class="figure-img" alt="Rowdy photo 2" />
+              </figure>
             </div>
             <div class="carousel-item">
-              <img
-                src="./img/rowdy03.jpg"
-                class="d-block w-100"
-                alt="Third slide"
-              />
-
-              <img
-                src="./img/rowdy04.jpg"
-                class="d-block w-100"
-                alt="First slide"
-              />
+              <figure class="figure">
+              <img src="./img/rowdy03.jpg" class="figure-img" alt="Rowdy photo 3" />
+              </figure>
+              <figure class="figure">
+              <img src="./img/rowdy04.jpg" class="figure-img" alt="Rowdy photo 4" />
+            </figure>
             </div>
             <div class="carousel-item">
-              <img
-                src="./img/rowdy05.jpg"
-                class="d-block w-100"
-                alt="Second slide"
-              />
-
-              <img
-                src="./img/rowdy06.jpg"
-                class="d-block w-100"
-                alt="Third slide"
-              />
+              <figure class="figure">
+              <img src="./img/rowdy05.jpg" class="figure-img" alt="Rowdy photo 5" />
+              </figure>
+              <figure class="figure">
+              <img src="./img/rowdy06.jpg" class="figure-img" alt="Rowdy photo 6" />
+              </figure>
             </div>
             <div class="carousel-item">
-              <img
-                src="./img/rowdy07.jpg"
-                class="d-block w-100"
-                alt="First slide"
-              />
-
-              <img
-                src="./img/rowdy08.jpg"
-                class="d-block w-100"
-                alt="Second slide"
-              />
+              <figure class="figure">
+              <img src="./img/rowdy07.jpg" class="figure-img" alt="Rowdy photo 7" />
+              </figure>
+              <figure class="figure">
+              <img src="./img/rowdy08.jpg" class="figure-img" alt="Rowdy photo 8" />
+              </figure>
             </div>
             <div class="carousel-item">
-              <img
-                src="./img/rowdy09.jpg"
-                class="d-block w-100"
-                alt="Third slide"
-              />
-
-              <img
-                src="./img/rowdy10.jpg"
-                class="d-block w-100"
-                alt="First slide"
-              />
+              <figure class="figure">
+              <img src="./img/rowdy09.jpg" class="figure-img" alt="Rowdy photo 9" />
+              </figure>
+              <figure class="figure">
+              <img src="./img/rowdy10.jpg" class="figure-img" alt="Rowdy photo 10" />
+              </figure>
             </div>
             <div class="carousel-item">
-              <img
-                src="./img/rowdy11.jpg"
-                class="d-block w-100"
-                alt="Second slide"
-              />
-
-              <img
-                src="./img/rowdy12.jpg"
-                class="d-block w-100"
-                alt="Third slide"
-              />
+              <figure class="figure">
+              <img src="./img/rowdy11.jpg" class="figure-img" alt="Rowdy photo 11" />
+              </figure>
+              <figure class="figure">
+              <img src="./img/rowdy12.jpg" class="figure-img" alt="Rowdy photo 12" />
+              </figure>
             </div>
             <div class="carousel-item">
-              <img
-                src="./img/rowdy13.jpg"
-                class="d-block w-100"
-                alt="First slide"
-              />
-
-              <img
-                src="./img/rowdy14.jpg"
-                class="d-block w-100"
-                alt="Second slide"
-              />
+              <figure class="figure">
+              <img src="./img/rowdy13.jpg" class="figure-img" alt="Rowdy photo 13" />
+              </figure>
+              <figure class="figure">
+              <img src="./img/rowdy14.jpg" class="figure-img" alt="Rowdy photo 14" />
+              </figure>
             </div>
             <div class="carousel-item">
-              <img
-                src="./img/rowdy15.jpg"
-                class="d-block w-100"
-                alt="Third slide"
-              />
+              <figure class="figure">
+              <img src="./img/rowdy15.jpg" class="figure-img" alt="Rowdy photo 15" />
+              </figure>
             </div>
           </div>
+
           <button
             class="carousel-control-prev"
             type="button"
             data-bs-target="#carousel"
             data-bs-slide="prev"
           >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="carousel-control-prev-icon"></span>
             <span class="visually-hidden">Previous</span>
           </button>
           <button
@@ -160,11 +174,12 @@
             data-bs-target="#carousel"
             data-bs-slide="next"
           >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="carousel-control-next-icon"></span>
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-      </div>
+      </section>
     </div>
-  </body>
+  </main>
+</body>
 </html>
