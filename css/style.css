@@ -282,7 +282,6 @@ textarea {
       max-height: 420px;
       object-fit: contain;
       background: #000;
-      border-radius: 1rem;
       box-shadow: 0 0 15px #0008;
     }
     a.phone {
