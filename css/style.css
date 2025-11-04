@@ -36,3 +36,45 @@ a.phone {
   color: #09f;
   text-decoration: underline;
 }
+
+.container {
+  border: 1px solid #dc3545;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.main-photo {
+  width: 100%;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+/* Carousel layout */
+.carousel {
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #000;
+}
+
+.carousel-item figure {
+  flex: 1;
+  object-fit: contain;
+  height: 100%;
+  width: 50%;
+  background: #000;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+@media (max-width: 768px) {
+  .carousel-item {
+    flex-direction: column;
+  }
+  .carousel-item figure img {
+    width: 100%;
+    height: 50%;
+  }
+}
